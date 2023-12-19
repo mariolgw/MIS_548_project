@@ -28,4 +28,10 @@ results = unique.to_dict()
 results[182]
 
 # write a program to preseve only 1 record of each player
+def unique_players(df):
+    unique = df['nflId'].value_counts()
+    results = unique.to_dict()
+    results[182]
+    return results
 
+unique_players(df)
